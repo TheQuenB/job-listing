@@ -1,0 +1,72 @@
+@import url('https://fonts.google.com/specimen/League+Spartan');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+
+:root {
+  
+/*### Primary*/
+--DesaturatedDarkCyan: hsl(180, 29%, 50%);
+
+/*### Neutral*/
+--LightGrayishCyanBackground: hsl(180, 52%, 96%);
+--LightGrayishCyanFilterTablets: hsl(180, 31%, 95%);
+--DarkGrayishCyan: hsl(180, 8%, 52%);
+--VeryDarkGrayish Cyan: hsl(180, 14%, 20%);
+  
+  }
+
+  body{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    background-color: var(--LightGrayishCyanBackground);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .item {
+    background-color: white;
+    height: 95px;
+    width: 45%;
+    padding: 10px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow:  0 4px 6px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);        
+    margin: 25px;
+    display: flex;
+  }
+
+  .complogo {
+    display: flex;
+    height: auto;
+    padding: 9px;
+  }
+
+  
+
+
+ @media (max-width:700px) {
+  .item{
+    height: 200px;
+    width: auto;
+    padding: 0;
+  }
+
+  .complogo{
+    height: 45px;
+    display: flex;
+    align-items: flex-start;
+    margin-top: -30px;
+    margin-left: 25px;
+  }
+
+
+}
