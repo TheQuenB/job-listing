@@ -1,0 +1,313 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  
+/*### Primary*/
+--DesaturatedDarkCyan: hsl(180, 29%, 50%);
+
+/*### Neutral*/
+--LightGrayishCyanBackground: hsl(180, 52%, 96%);
+--LightGrayishCyanFilterTablets: hsl(180, 31%, 95%);
+--DarkGrayishCyan: hsl(180, 8%, 52%);
+--VeryDarkGrayishCyan: hsl(180, 14%, 20%);
+  
+  }
+
+  body{
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    background-color: var(--LightGrayishCyanBackground);
+
+  }
+
+  .header {
+    width: 100%;
+    height: 255px;
+    background-image: url('./images/bg-header-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--DesaturatedDarkCyan);
+  }
+
+  .container {
+    position: absolute;
+    top: 156px;
+    background-color:white;
+    width: 100%;
+  }
+  
+  .search-box{
+    width: 68%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px -7px rgba(93,164,164,0.5);
+    padding: 20px 40px;
+    box-sizing: border-box;
+    margin: -45px 160px;
+    opacity: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }  
+  
+.hidden {
+  display: none;
+
+}
+
+  .search-clear:hover {
+    text-decoration: underline;
+  }
+  
+
+  .search-content{
+    flex-wrap: wrap;
+  }
+  
+  .search-filter{
+    margin-bottom: 3rem;
+  }
+  
+  .filter-content{
+    background-color:white;
+    color:hsl(180, 29%, 50%);
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0.8rem 3.6rem 0.8rem 1rem;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    position: relative;
+    margin-right: 2rem;
+  }
+  
+  
+  .filter-remove{
+    font-size: 1.5rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: var(--DesaturatedDarkCyan);
+    color:#fff;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+  }
+  
+  
+  .filter-remove:hover{
+    background-color: var(--VeryDarkGrayishCyan);
+  }
+
+.search-clear {
+  display: flex;
+  justify-content: center;
+  margin-left: 50px;
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  color: var(--DesaturatedDarkCyan);
+  font-weight: 700;
+  outline: none;
+  cursor: pointer;
+}
+
+.search-clear:hover {
+  border-bottom: solid 2px var(--DesaturatedDarkCyan);
+}
+
+.jobs {    
+    display: flex;
+   margin-top: 5px;
+  }
+  
+
+.wrapper{
+  background-color: #fff;
+  flex-direction: column;
+  margin:4rem 2rem;
+  border-radius: 4px; 
+  padding: 0rem 2rem; 
+  box-shadow: 0px 10px 15px -7px rgb(93 164 164 / 50%);
+  border-radius: 6px;
+}
+
+.featured-border{
+  border-left: 5px solid hsl(180, 29%, 50%);
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+}
+
+.complogo{
+ width: 4rem;
+ transform: translateY(-50%);
+}
+
+.companyName {
+  color: var(--DesaturatedDarkCyan);
+  margin-right: 5px;
+  font-weight: 700;
+}
+
+
+.new{
+  background-color:  hsl(180, 29%, 50%);
+  color: #fff;
+  padding: 0.6rem 0.8rem;
+  border-radius: 14px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-right: 0.4rem;
+}
+
+.featured{
+  background-color: hsl(180, 14%, 20%);
+  color: #fff;
+  padding: 0.6rem 0.8rem;
+  border-radius: 14px;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.jobTitle{
+  margin: 1.2rem 0rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: hsl(180, 14%, 20%);
+}
+
+.jobTitle:hover{
+  color: hsl(180, 29%, 50%);
+}
+
+.jobInfo{
+  border-bottom: 1px solid hsl(180, 8%, 52%);
+  padding-bottom: 1rem;
+  font-weight: 600;
+}
+
+.jInfo{
+  color: hsl(180, 8%, 52%);
+  font-size: 1.2rem;
+}
+
+.contractInfo, .locationInfo{
+  margin-left: 2rem;
+}
+
+.jobSkills{
+  margin: 1.5rem 0rem ;
+  flex-wrap: wrap;
+  vertical-align: middle;
+}
+
+.filter{
+  background-color: hsl(180, 31%, 95%);
+  color:hsl(180, 29%, 50%);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0rem 1rem 1.5rem;
+  padding: 0.8rem 1rem;
+  border-radius: 2px;
+  vertical-align: middle;
+}
+
+.filter:hover{
+  background-color: hsl(180, 29%, 50%);
+  color: hsl(180, 31%, 95%);
+}
+
+
+@media screen and (min-width:945px){
+
+  .header{
+      background:  hsl(180, 29%, 50%) url(./images/bg-header-desktop.svg);
+  }
+
+  .wrapper{
+      flex-direction: row;
+      margin:4rem auto;
+      padding: 2rem;
+      align-items: center;
+      justify-content: space-between;
+      width: 90%;
+  }
+
+  .search-content{
+      width: 80%;
+      margin: 0 auto;
+  }
+
+  .item{
+      flex-direction: row;
+  }
+
+  .complogo{
+      display: block;
+      margin: auto;
+      transform: translateY(0%);
+      width: 6rem;
+      height: 6rem;
+      margin-right: 1rem;
+  }
+
+  .jobInfo{
+      border-bottom: none;
+      padding-bottom: 0rem;
+  }
+
+  .filter{
+      margin:auto 1rem ;
+  }
+}
+
+@media screen and (min-width:1210px){
+
+  .search{
+      width: 80%;
+  }
+
+  .wrapper{
+      width: 80%;
+  }
+
+  .complogo{
+      width: 8rem;
+      height: 8rem;
+      margin-right: 2rem;
+  }
+
+  .compdesc{
+      margin: 0.8rem;
+  }
+
+  .mainInfo{
+      margin-bottom: 1.3rem;
+  }
+
+  .item{
+      margin: 0 2rem;
+  }
+
+  .jobTitle{
+      font-size: 1.8rem;
+  }    
+
+  .info{
+      font-size: 1.5rem;
+  }
+
+  .contractInfo, .locationInfo{
+      margin-left: 3rem;
+  }
+}
